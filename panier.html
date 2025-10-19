@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier — Boutique SPA</title>
+    <link rel="stylesheet" href="panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <a href="Accueil.html">
+                <img src="SPA logo V2.png" alt="Logo Boutique SPA">
+            </a>
+            <form class="search-form" action="recherche.html" method="get">
+                <input type="search" name="q" placeholder="Rechercher...">
+            </form>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Catégorie.html" class="active">Catégories</a></li>
+                <li><a href="erreur.html">Adoptions</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a class="account-link" href="erreur.html">Mon compte</a>
+            <a class="cart-link" href="panier.html" aria-label="Voir le panier">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <button class="hamburger" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Votre panier</h1>
+
+        <p>Votre panier est vide pour le moment.</p>
+
+        <table border="1" cellpadding="5" cellspacing="0" id="panier-table" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix unitaire</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Total général</strong></td>
+                    <td><strong id="total-general">0,00 €</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <div>
+            <strong>Boutique SPA</strong>
+            <p>39 boulevard Berthier, 75017 Paris - France</p>
+            <p>Tel: 01 43 80 40 66 (numéro non surtaxé)</p>
+        </div>
+
+        <div>
+            <h4>Liens utiles</h4>
+            <ul>
+                <li><a href="mentions légales.html" target="_blank">Mentions légales</a></li>
+                <li><a href="politiques de confidentialité.html" target="_blank">Politique de confidentialité</a></li>
+                <li><a href="CGU.html" target="_blank">Conditions générales</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Nos réseaux</h4>
+            <ul>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Crédits</h4>
+            <p>Design & développement — Équipe SPA. Images de démonstration. Icônes illustratives.</p>
+        </div>
+
+        <p>Réalisé avec <a href="erreur.html" target="_blank">Crédits détaillés</a> © SPA — Tous droits réservés — SIRET
+            775 691 991</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".main-nav");
+        const cart = document.querySelector(".cart-link");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("open");
+            cart.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>

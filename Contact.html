@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boutique SPA — Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <a href="Accueil.html">
+                <img src="SPA logo V2.png" alt="Logo Boutique SPA">
+            </a>
+            <form class="search-form" action="recherche.html" method="get">
+                <input type="search" name="q" placeholder="Rechercher...">
+            </form>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Catégorie.html">Catégories</a></li>
+                <li><a href="erreur.html">Adoptions</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a class="account-link" href="erreur.html">Mon compte</a>
+            <a class="cart-link" href="panier.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <button class="hamburger" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="content">
+                <h2>Contactez-nous 🐾</h2>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="7d0cf3fb-81eb-4fd1-8da1-0f51285f9b4f">
+
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" id="name" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Votre e-mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Écrivez votre message..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Envoyer ✉️</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <strong>Boutique SPA</strong>
+            <p>39 boulevard Berthier, 75017 Paris - France</p>
+            <p>Tel: 01 43 80 40 66 (numéro non surtaxé)</p>
+        </div>
+
+        <div>
+            <h4>Liens utiles</h4>
+            <ul>
+                <li><a href="mentions légales.html" target="_blank">Mentions légales</a></li>
+                <li><a href="politiques de confidentialité.html" target="_blank">Politique de confidentialité</a></li>
+                <li><a href="CGU.html" target="_blank">Conditions générales</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Nos réseaux</h4>
+            <ul class="social-icons">
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Crédits</h4>
+            <p>Design & développement — Équipe SPA. Images de démonstration. Icônes illustratives.</p>
+        </div>
+
+        <p class="footer-bottom">
+            Réalisé avec <a href="erreur.html" target="_blank">Crédits détaillés</a> —
+            © SPA — Tous droits réservés — SIRET 775 691 991
+        </p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".main-nav");
+        const cart = document.querySelector(".cart-link");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("open");
+            cart.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>

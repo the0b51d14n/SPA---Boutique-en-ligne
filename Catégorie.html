@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boutique SPA — Catégories</title>
+    <link rel="stylesheet" href="Categorie.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <a href="Accueil.html">
+                <img src="SPA logo V2.png" alt="Logo Boutique SPA">
+            </a>
+            <form class="search-form" action="recherche.html" method="get">
+                <input type="search" name="q" placeholder="Rechercher...">
+            </form>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Catégorie.html" class="active">Catégories</a></li>
+                <li><a href="erreur.html">Adoptions</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a class="account-link" href="erreur.html">Mon compte</a>
+            <a class="cart-link" href="panier.html" aria-label="Voir le panier">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <button class="hamburger" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="categories">
+            <img src="spa fond vente.jpg" alt="fond" class="b">
+            <h1>Catégories</h1>
+            <ul id="filtres">
+                <li data-filtre="Collection La SPA">Collection La SPA</li>
+                <li data-filtre="Animaux">Animaux</li>
+                <li data-filtre="Bien-être">Bien-être</li>
+                <li data-filtre="Maison">Maison</li>
+                <li data-filtre="Épicerie">Épicerie</li>
+                <li data-filtre="Jeux">Jeux</li>
+                <li data-filtre="Papeterie">Papeterie</li>
+                <li data-filtre="Dons">Dons</li>
+                <li data-filtre="Tout">Tout</li>
+            </ul>
+        </section>
+
+        <section id="produits">
+            <h2>Nos Produits</h2>
+            <div class="grid-produits">
+
+                <div class="carte-produit" data-categorie="Collection La SPA, Papeterie">
+                    <div class="image-container">
+                        <img src="produit1preview.webp" alt="Couverture produit" class="img-cover">
+                        <img src="produit1img.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Calendrier de la SPA</h3>
+                    <p class="prix">11,00 €</p>
+                    <a href="produit1.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Collection La SPA, Maison">
+                    <div class="image-container">
+                        <img src="produit2preview.webp" alt="Couverture produit" class="img-cover">
+                        <img src="produit2img.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Lot de 2 mug - SPA</h3>
+                    <p class="prix">19,00 €</p>
+                    <a href="produit2.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Papeterie">
+                    <div class="image-container">
+                        <img src="produit3preview.webp" alt="Couverture produit" class="img-cover">
+                        <img src="produit3img.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Agenda</h3>
+                    <p class="prix">16,00 €</p>
+                    <a href="produit3.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Animaux">
+                    <div class="image-container">
+                        <img src="expo 2.webp" alt="Couverture produit" class="img-cover">
+                        <img src="expo 2.1.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Croquette - 3kg</h3>
+                    <p class="prix">27,95 €</p>
+                    <a href="produit4.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Animaux">
+                    <div class="image-container">
+                        <img src="expo 1.webp" alt="Couverture produit" class="img-cover">
+                        <img src="expo 1.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Collier en jean</h3>
+                    <p class="prix">11,00 €</p>
+                    <a href="produit5.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Maison, Animaux">
+                    <div class="image-container">
+                        <img src="expo 3.webp" alt="Couverture produit" class="img-cover">
+                        <img src="expo3.1.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>PANIER POUR CHAT FEUTRINE LA SPA</h3>
+                    <p class="prix">49,90 €</p>
+                    <a href="produit6.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Dons">
+                    <div class="image-container">
+                        <img src="dons 1.webp" alt="Couverture produit" class="img-cover">
+                        <img src="dons 1.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Don - 2 mois de nourriture pour un chien</h3>
+                    <p class="prix">44,00 €</p>
+                    <a href="produit7.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Dons">
+                    <div class="image-container">
+                        <img src="dons 2.webp" alt="Couverture produit" class="img-cover">
+                        <img src="dons 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Don - 3 mois de traitement pour un chat</h3>
+                    <p class="prix">69,00 €</p>
+                    <a href="produit8.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Dons">
+                    <div class="image-container">
+                        <img src="dons 3.webp" alt="Couverture produit" class="img-cover">
+                        <img src="dons 3.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Don - 1 mois de soins pour un chien</h3>
+                    <p class="prix">21,00 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Dons">
+                    <div class="image-container">
+                        <img src="dons 4.webp" alt="Couverture produit" class="img-cover">
+                        <img src="dons 4.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Don - 6 mois de soins pour un chien</h3>
+                    <p class="prix">126,00 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Collection La SPA, Animaux">
+                    <div class="image-container">
+                        <img src="gamelle.webp" alt="Couverture produit" class="img-cover">
+                        <img src="gamelle.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Gamelle en inox La SPA</h3>
+                    <p class="prix">18,00 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Collection La SPA, Papeterie">
+                    <div class="image-container">
+                        <img src="carte animaux.webp" alt="Couverture produit" class="img-cover">
+                        <img src="carte animaux.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>8 CARTES ANIMAUX HUMORISTIQUES LA SPA</h3>
+                    <p class="prix">9,00 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Bien-être">
+                    <div class="image-container">
+                        <img src="coffret creme 1.webp" alt="Couverture produit" class="img-cover">
+                        <img src="coffret creme 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Coffret 3 crèmes mains - Figue, Rose, Coton</h3>
+                    <p class="prix">21,90 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Bien-être">
+                    <div class="image-container">
+                        <img src="coffret savon 1.jpeg" alt="Couverture produit" class="img-cover">
+                        <img src="coffre savon 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Coffret 4 savons pur olive</h3>
+                    <p class="prix">29,90 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Bien-être">
+                    <div class="image-container">
+                        <img src="bouillotte.webp" alt="Couverture produit" class="img-cover">
+                        <img src="bouillotte.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Bouillotte de Lin</h3>
+                    <p class="prix">45,90 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Maison">
+                    <div class="image-container">
+                        <img src="Couverts reutilisables.png" alt="Couverture produit" class="img-cover">
+                        <img src="couverts reutilisables 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Kit de couverts réutilisables</h3>
+                    <p class="prix">8,90 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Maison, Jeux">
+                    <div class="image-container">
+                        <img src="etui a broder.webp" alt="Couverture produit" class="img-cover">
+                        <img src="etui a broder 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Étui à broder à la main</h3>
+                    <p class="prix">41,00 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Bien-être">
+                    <div class="image-container">
+                        <img src="anti moustique.webp" alt="Couverture produit" class="img-cover">
+                        <img src="anti moustique 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Anti-moustiques 2 en 1</h3>
+                    <p class="prix">14,90 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Jeux">
+                    <div class="image-container">
+                        <img src="puzzle 1.webp" alt="Couverture produit" class="img-cover">
+                        <img src="puzzle 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>PUZZLE LA LOUTRE</h3>
+                    <p class="prix">31,90 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Jeux">
+                    <div class="image-container">
+                        <img src="origami.webp" alt="Couverture produit" class="img-cover">
+                        <img src="origami 2.png" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Tête de chat en origami</h3>
+                    <p class="prix">15,00 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Jeux">
+                    <div class="image-container">
+                        <img src="globe 1.webp" alt="Couverture produit" class="img-cover">
+                        <img src="globe 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Glode terrestre à colorier</h3>
+                    <p class="prix">24,00 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Papeterie">
+                    <div class="image-container">
+                        <img src="BD.webp" alt="Couverture produit" class="img-cover">
+                        <img src="BD 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>BD LE DERNIER REFUGE DE GLENAT LA SPA</h3>
+                    <p class="prix">14,95 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Épicerie">
+                    <div class="image-container">
+                        <img src="petit dej 1.webp" alt="Couverture produit" class="img-cover">
+                        <img src="petit dej 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Coffret petit déjeuner</h3>
+                    <p class="prix">27,00 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Épicerie">
+                    <div class="image-container">
+                        <img src="truffes 1.webp" alt="Couverture produit" class="img-cover">
+                        <img src="truffes 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Boite Jungle de truffes fantaisie natures</h3>
+                    <p class="prix">16,00 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Épicerie">
+                    <div class="image-container">
+                        <img src="infusion 1.webp" alt="Couverture produit" class="img-cover">
+                        <img src="infusion 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Infusion Love Mama - L'Infuseur</h3>
+                    <p class="prix">21,90 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+                <div class="carte-produit" data-categorie="Épicerie">
+                    <div class="image-container">
+                        <img src="reglette.webp" alt="Couverture produit" class="img-cover">
+                        <img src="reglette 2.webp" alt="Vrai produit" class="img-real">
+                    </div>
+                    <h3>Réglette de pâtes de fruits</h3>
+                    <p class="prix">14,50 €</p>
+                    <a href="erreur.html" class="btn-produit">Voir produit</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <strong>Boutique SPA</strong>
+            <p>39 boulevard Berthier, 75017 Paris - France</p>
+            <p>Tel: 01 43 80 40 66 (numéro non surtaxé)</p>
+        </div>
+
+        <div>
+            <h4>Liens utiles</h4>
+            <ul>
+                <li><a href="mentions légales.html" target="_blank">Mentions légales</a></li>
+                <li><a href="politiques de confidentialité.html" target="_blank">Politique de confidentialité</a></li>
+                <li><a href="CGU.html" target="_blank">Conditions générales</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Nos réseaux</h4>
+            <ul class="social-icons">
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Crédits</h4>
+            <p>Design & développement — Équipe SPA. Images de démonstration. Icônes illustratives.</p>
+        </div>
+
+        <p>Réalisé avec ♥ — <a href="erreur.html" target="_blank">Crédits détaillés</a>
+            © SPA — Tous droits réservés — SIRET 775 691 991
+        </p>
+    </footer>
+
+    <script src="Categorie.js"></script>
+</body>
+
+</html>

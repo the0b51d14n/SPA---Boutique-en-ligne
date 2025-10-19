@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boutique SPA — Résultats de recherche</title>
+    <link rel="stylesheet" href="recherche.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a href="Accueil.html">
+                <img src="SPA logo V2.png" alt="Logo Boutique SPA">
+            </a>
+            <form class="search-form" action="recherche.html" method="get">
+                <input type="search" name="q" placeholder="Rechercher..." aria-label="Rechercher">
+            </form>
+        </div>
+
+        <nav class="main-nav" aria-label="Menu principal">
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Catégorie.html">Catégories</a></li>
+                <li><a href="adoptions.html">Adoptions</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a class="account-link" href="erreur.html">Mon compte</a>
+            <a class="cart-link" href="panier.html" aria-label="Voir le panier">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <button class="hamburger" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="resultats-title">Résultats de recherche</h2>
+        <div id="resultats" aria-live="polite">
+        </div>
+    </main>
+
+    <footer>
+        <p>© SPA — Tous droits réservés</p>
+    </footer>
+
+    <script src="recherche.js"></script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".main-nav");
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+
+</html>

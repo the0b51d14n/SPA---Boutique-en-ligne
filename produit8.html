@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique La SPA - Produit</title>
+    <link rel="stylesheet" href="produit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <a href="Accueil.html">
+                <img src="SPA logo V2.png" alt="Logo Boutique SPA">
+            </a>
+            <form class="search-form" action="recherche.html" method="get">
+                <input type="search" name="q" placeholder="Rechercher...">
+            </form>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Catégorie.html" class="active">Catégories</a></li>
+                <li><a href="erreur.html">Adoptions</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a class="account-link" href="erreur.html">Mon compte</a>
+            <a class="cart-link" href="panier.html" aria-label="Voir le panier">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <button class="hamburger" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <a href="Catégorie.html" class="back-button">
+        <i class="fa-solid fa-arrow-left"></i> Retour aux produits
+    </a>
+
+    <main>
+        <section class="product-description" data-price="69.00">
+            <div class="product-gallery">
+                <div class="thumbnails">
+                    <img src="dons 2.webp" alt="Miniature 1" class="thumb active">
+                </div>
+                <div class="main-img">
+                    <img src="dons 2.webp" alt="Image principale du produit" id="main-image" class="main-image">
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h1>Don - 3 mois de traitement pour un chat</h1>
+                <p><strong>Caractéristiques :</strong> Avec un don de 69 € soit 23,46 € après déduction fiscale, vous
+                    pouvez aider en urgence au traitement des chats comme Cody. Votre générosité fera toute la
+                    différence.</p>
+                <p><strong>Matériaux :</strong>
+                </p>
+                <p><strong>Description :</strong> «CODY est arrivé de la fourrière le 22 février, avec une petite mine.
+                    Attachant et câlin, il est malheureusement positif au FIV et FELV. Il a des difficultés pour
+                    s'alimenter et bave à cause d'ulcères dans les gencives. Malgré une extraction dentaire et un
+                    traitement anti-inflammatoire quotidien, il souffre toujours. Son espérance de vie est estimée à
+                    moins de 3 ans. Le vétérinaire propose un traitement coûteux, le Virbagen, qui pourrait renforcer
+                    son système immunitaire.»
+
+                    Aidez-nous à améliorer la vie de nombreux chats comme Cody en leur offrant des traitements urgents
+                    dont ils ont grand besoin. Ces félins, souvent en situation de détresse, nécessitent des soins
+                    médicaux rapides pour survivre et se rétablir. Votre générosité peut réellement changer leur
+                    existence. Chaque don permet de financer les traitements, les médicaments et les soins vétérinaires
+                    essentiels pour leur santé et leur bien-être. Merci pour votre soutien et votre compassion envers
+                    ces chats vulnérables.</p>
+
+                <p class="product-price">Prix : <span id="price">69.00</span> €</p>
+                <div class="quantity-container">
+                    <label for="quantity">Quantité : </label>
+                    <select id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <strong>Boutique SPA</strong>
+            <p>39 boulevard Berthier, 75017 Paris - France</p>
+            <p>Tel: 01 43 80 40 66 (numéro non surtaxé)</p>
+        </div>
+
+        <div>
+            <h4>Liens utiles</h4>
+            <ul>
+                <li><a href="mentions légales.html" target="_blank">Mentions légales</a></li>
+                <li><a href="politiques de confidentialité.html" target="_blank">Politique de confidentialité</a></li>
+                <li><a href="CGU.html" target="_blank">Conditions générales</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Nos réseaux</h4>
+            <ul class="social-icons">
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Crédits</h4>
+            <p>Design & développement — Équipe SPA. Images de démonstration. Icônes illustratives.</p>
+        </div>
+        <p>Réalisé avec <a href="erreur.html" target="_blank">Crédits détaillés</a>
+            © SPA — Tous droits réservés — SIRET 775 691 991</p>
+    </footer>
+
+    <script src="produit.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boutique SPA — Accueil</title>
+    <link rel="stylesheet" href="Accueil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <a href="Accueil.html">
+                <img src="SPA logo V2.png" alt="Logo Boutique SPA">
+            </a>
+            <form class="search-form" action="recherche.html" method="get">
+                <input type="search" name="q" placeholder="Rechercher...">
+            </form>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="Accueil.html" class="active">Accueil</a></li>
+                <li><a href="Catégorie.html">Catégories</a></li>
+                <li><a href="erreur.html">Adoptions</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <a class="account-link" href="erreur.html">Mon compte</a>
+
+            <a class="cart-link" href="panier.html" aria-label="Voir le panier">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <button class="hamburger" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </header>
+
+    <section id="accueil">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="SPA background.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+
+        <div class="content">
+            <h1>Offrez confort et soins — faites un geste pour les animaux</h1>
+            <p>Produits responsables, accessoires solidaires et contributions directes aux actions de la SPA.</p>
+            <a href="Catégorie.html">Voir les produits</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="produits">
+            <h2>Produits mis en avant</h2>
+            <div class="produits-grid">
+                <article>
+                    <img src="expo 1.webp" alt="Collier recyclé">
+                    <h3>Collier Jean Fidelami La SPA</h3>
+                    <p>Le jean brut, pensé pour eux.</p>
+                    <p>Prix : 11,00 €</p>
+                    <a href="produit5.html" class="btn-produit">Voir produit</a>
+                </article>
+                <article>
+                    <img src="expo 2.webp" alt="Nourriture premium">
+                    <h3>Croquettes sur mesure</h3>
+                    <p>Vitalité sur-mesure. - Quantité 3kg</p>
+                    <p>Prix : 27,95 €</p>
+                    <a href="produit4.html" class="btn-produit">Voir produit</a>
+                </article>
+                <article>
+                    <img src="expo 3.webp" alt="Panier douillet">
+                    <h3>Panier chat - Feutrine SPA</h3>
+                    <p>Confort et style pour votre chat.</p>
+                    <p>Prix : 49,90 €</p>
+                    <a href="produit6.html" class="btn-produit">Voir produit</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="categories-accueil">
+            <h2>Catégories en avant</h2>
+            <div class="categories-grid">
+                <article>
+                    <a href="Catégorie.html?categorie=Papeterie">
+                        <img src="papeterie.jpg" alt="Papeterie SPA">
+                        <h3>Papeterie</h3>
+                    </a>
+                    <p>Calendriers, cahiers et fournitures solidaires.</p>
+                </article>
+
+                <article>
+                    <a href="Catégorie.html?categorie=Maison">
+                        <img src="maison.jpg" alt="Maison SPA">
+                        <h3>Maison</h3>
+                    </a>
+                    <p>Objets du quotidien pour allier utilité et solidarité.</p>
+                </article>
+
+                <article>
+                    <a href="Catégorie.html?categorie=Bien-être">
+                        <img src="bien etre.jpg" alt="Bien-être animaux">
+                        <h3>Bien-être</h3>
+                    </a>
+                    <p>Accessoires et produits pour le confort de vos compagnons.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <strong>Boutique SPA</strong>
+            <p>39 boulevard Berthier, 75017 Paris - France</p>
+            <p>Tel: 01 43 80 40 66 (numéro non surtaxé)</p>
+        </div>
+
+        <div>
+            <h4>Liens utiles</h4>
+            <ul>
+                <li><a href="mentions légales.html" target="_blank">Mentions légales</a></li>
+                <li><a href="politiques de confidentialité.html" target="_blank">Politique de confidentialité</a></li>
+                <li><a href="CGU.html" target="_blank">Conditions générales</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Nos réseaux</h4>
+            <ul class="social-icons">
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="erreur.html" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Crédits</h4>
+            <p>Design & développement — Équipe SPA. Images de démonstration. Icônes illustratives.</p>
+        </div>
+        <p>Réalisé avec <a href="erreur.html" target="_blank">Crédits détaillés</a>
+            © SPA — Tous droits réservés — SIRET 775 691 991</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".main-nav");
+        const cart = document.querySelector(".cart-link");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("open");
+            cart.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>
